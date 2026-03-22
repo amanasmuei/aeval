@@ -1,0 +1,41 @@
+{
+  "name": "@aman_asmuei/aeval",
+  "version": "0.1.0",
+  "description": "The portable evaluation layer for AI companions",
+  "type": "module",
+  "bin": {
+    "aeval": "./bin/aeval.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "bin",
+    "template"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "tsc --noEmit",
+    "test": "vitest run",
+    "dev": "tsup --watch"
+  },
+  "keywords": [
+    "ai",
+    "companion",
+    "evaluation",
+    "metrics",
+    "relationship",
+    "trust"
+  ],
+  "author": "Aman Asmuei",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.0.0"
+  }
+}
